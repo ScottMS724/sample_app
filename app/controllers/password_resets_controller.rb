@@ -1,6 +1,6 @@
 class PasswordResetsController < ApplicationController
   before_action :get_user, only: [:edit, :update] 
-  before_action :valid_user, only: [:edit, update] 
+  before_action :valid_user, only: [:edit, :update] 
 
   def new
   end
@@ -19,6 +19,9 @@ class PasswordResetsController < ApplicationController
   end
 
   def edit
+  end 
+
+  def update
   end 
 
   private
