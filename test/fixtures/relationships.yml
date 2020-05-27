@@ -1,0 +1,15 @@
+one:
+  follower: scott
+  followed: lana
+
+two:
+  follower: scott
+  followed: malory
+
+three:
+  follower: lana
+  followed: scott
+
+four:
+  follower: archer
+  followed: scott 
