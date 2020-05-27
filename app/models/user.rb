@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+<<<<<<< HEAD
     has_many :microposts, dependent: :destroy  
     has_many :active_relationships, class_name:  "Relationship",
                                     foreign_key: "follower_id",
@@ -8,6 +9,9 @@ class User < ApplicationRecord
                                      dependent:   :destroy
     has_many :following, through: :active_relationships, source: :followed
     has_many :followers, through: :passive_relationships, source: :follower
+=======
+    has_many :microposts, dependent: :destroy
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
     attr_accessor :remember_token, :activation_token, :reset_token 
     has_secure_password 
     before_save :downcase_email 
@@ -67,6 +71,7 @@ class User < ApplicationRecord
       reset_sent_at < 2.hours.ago 
     end 
 
+<<<<<<< HEAD
     # Follows a user.
     def follow(other_user)
       following << other_user
@@ -87,6 +92,10 @@ class User < ApplicationRecord
                        WHERE  follower_id = :user_id"
       Micropost.where("user_id IN (#{following_ids})
                        OR user_id = :user_id", user_id: id)
+=======
+    def feed
+      Micropost.where("user_id = ?", id) 
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
     end 
 
     private

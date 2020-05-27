@@ -1,25 +1,35 @@
 <% if logged_in? %>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
   <div class="row">
     <aside class="col-md-4">
       <section class="user_info">
         <%= render 'shared/user_info' %>
       </section>
+<<<<<<< HEAD
 
       <section class="stats">
         <%= render 'shared/stats' %>
       </section>
 
+=======
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
       <section class="micropost_form">
         <%= render 'shared/micropost_form' %>
       </section>
     </aside>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
     <div class="col-md-8">
       <h3>Micropost Feed</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
+<<<<<<< HEAD
 
 <% else %>
 
@@ -37,4 +47,8 @@
 
   <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
                         "https://rubyonrails.org/" %>
+=======
+<% else %>
+  <%= render 'static_pages/logged_out_home' %>
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
 <% end %>

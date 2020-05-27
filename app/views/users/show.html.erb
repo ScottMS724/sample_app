@@ -13,9 +13,14 @@
     </section> 
 
   </aside>
+<<<<<<< HEAD
   
   <div class="col-md-8">
     <%= render 'follow_form' if logged_in? %> 
+=======
+
+  <div class="col-md-8">
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
     <% if @user.microposts.any? %>
       <h3>Microposts (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
@@ -24,6 +29,10 @@
       <%= will_paginate @microposts %>
     <% end %>
   </div>
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
 </div> 
 

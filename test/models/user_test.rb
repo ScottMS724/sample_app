@@ -83,6 +83,7 @@ class UserTest < ActiveSupport::TestCase
     end
   end
 
+<<<<<<< HEAD
   test "should follow and unfollow a user" do
     scott = users(:scott)
     archer  = users(:archer)
@@ -112,5 +113,7 @@ class UserTest < ActiveSupport::TestCase
     end
   end
 
+=======
+>>>>>>> 36667e5a5a8649f6ca9fa8f660d7b5266db476ed
 
 end
